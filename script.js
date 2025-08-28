@@ -1,4 +1,4 @@
-/*Part 1: Mastering JavaScript Basics :Demonstrating variables, data types, operators, and conditionals.One is promted to enter an age that will print a message*/
+/*Part 1: Mastering JavaScript Basics :Demonstrating variables, data types, operators, and conditionals.One is prompted to enter an age that will print a message*/
 let age = prompt("Enter your age:");
 age = Number(age);
 
@@ -28,6 +28,15 @@ function startCountdown() {
   }
 
   document.getElementById("countdown").textContent = "Countdown: " + output;
+}
+//this code generates a list of fruits on your webpage
+let fruits = ["Apple", "Banana", "Mango", "Orange"];
+let fruitList = document.getElementById("fruit-list");
+
+for (let i = 0; i < fruits.length; i++) {
+  let li = document.createElement("li");
+  li.textContent = fruits[i];
+  fruitList.appendChild(li);
 }
   
 
