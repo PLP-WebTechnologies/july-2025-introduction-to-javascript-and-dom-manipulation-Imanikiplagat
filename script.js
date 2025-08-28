@@ -34,12 +34,12 @@ function startCountdown() {
 // Part 4: DOM Manipulation
 
 // Change background color
-document.getElementById("changeText").addEventListener("click", function () {
-  document.body.style.backgroundColor = "lightblue"; // you can pick any color
+document.getElementById("changeColour").addEventListener("click", function () {
+  document.body.style.backgroundColor = "Pink"; 
 });
 
 // Toggle ALL CAPS
-document.getElementById("toggleColor").addEventListener("click", function () {
+document.getElementById("Text").addEventListener("click", function () {
   let domArea = document.getElementById("dom-area");
   domArea.style.textTransform = 
     domArea.style.textTransform === "uppercase" ? "none" : "uppercase";
